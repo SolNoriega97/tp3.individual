@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>formulario</title>
+	<link href="Estilos.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<header>
+<nav class="botonera">
+	<ul>
+		<li><a href="curriculum.html">Curriculum</a></li>
+		<li><a href="galeria.html">Galeria</a></li>
+		<li><a href="index.html">Pag.Principal</a></li>
+	</ul>
+</nav>
+	<h1>Formulario</h1>
+</header>
+
+<main>
+		<p class="campos">
+		Campos obligatorios de contacto</p>
+		<form method="post" action="mailto:noriegasol@hotmail.com?subject='Email enviado desde formulario'" target="_blank" enctype="text/plain">
+	<div>
+		<label for="Nombre">Nombre:</label>
+		<input type="text" name="Nombre" id="Nombre" maxlength="35" placeholder="Nombre completo">
+		<label for="Email">* Email:</label>
+		<input type="email" name="Email" id="Email" required>
+		<label for="Edad">Edad:</label>
+		<input type="number" min="15" max="100" name="Edad" id="Edad">
+		<label for="Nacimiento">Fecha de nacimiento</label>
+		<input type="date" name="Nacimiento" id="Nacimiento">
+	</div>
+
+	<div>
+		<p>Sexo:</p>
+		<label for="Sexo">Femenino <input type="radio" name="sexo" value="Femenimo" id="Femenino"> </label>
+		<label for="Sexo">Masculino <input type="radio" name="sexo" value="Masculino" id="Masculino"> </label>
+		<label for="Sexo">No especifica<input type="radio" name="sexo" value="No especifica" id="No especifica"> </label>
+
+		<p>Intereses:</p>
+		<label>Diseño Web <input type="checkbox" name="Intereses" value="Diseño Web" id="Web"></label>
+		<label>Diseño Editorial <input type="checkbox" name="Intereses" value="Diseño Editorial" id="Editorial"></label>
+		<label>Fotografia<input type="checkbox" name="Intereses" value="Fotografia" id="Foto"></label>
+
+		<label for="Telefono">Telefono:</label>
+		<input type="tel" name="Telefono" id="Telefono" placeholder="(000)00000000">
+		<label for="Mensaje">Mensaje:</label>
+		<textarea name="Mensaje" id="Mensaje"></textarea>
+	</div>
+		<input type="reset" value="Borrar">
+		<input type="Submit" value="Enviar" formenctype="text/plain">
+		</form>
+</main>
+
+<footer>
+	<p>Formulario - Computación III - C&aacute;tedra Wischñevsky</p>
+</footer>
+
+</body>
+</html>
